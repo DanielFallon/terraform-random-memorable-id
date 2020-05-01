@@ -1,11 +1,11 @@
 output "memorable" {
   description = "The memorable segment of the generated id (without separator appended)"
-  value       = "${random_pet.memorable.id}"
+  value       = random_pet.memorable.id
 }
 
 output "id" {
   description = "The id segement of the generated id (without separator prefixed)"
-  value       = "${random_string.id.result}"
+  value       = random_string.id.result
 }
 
 output "memorable_id" {
